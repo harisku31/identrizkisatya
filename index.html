@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ident Altie</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="card">
+
+        <!-- HEADER -->
+        <div class="header">
+
+            <!-- LOGO DI ATAS -->
+            <div class="logo-row">
+                <img src="altie.png" class="logo" alt="Logo 1">
+                <img src="Divisi Keamanan.png" class="logo" alt="Logo 2">
+                <img src="altie.png" class="logo" alt="Logo 3">
+            </div>
+
+            <!-- JUDUL -->
+            <h1>IDENT ALTIE</h1>
+
+        </div>
+
+        <!-- FOTO -->
+        <div class="foto">
+            <img src="rizki satia.JPG" alt="Foto 3x4">
+        </div>
+
+        <!-- DATA -->
+        <div class="data-text">
+            <p><strong>Nama:</strong> Rizki Satya</p>
+            <p><strong>Kelas:</strong> XI A PPLG</p>
+            <p><strong>Wali Kelas:</strong> Ustad Ari Kurniawan</p>
+        </div>
+
+        <!-- FORM -->
+        <form>
+
+            <label>Kamar:</label>
+            <input type="text" id="kamar" placeholder="Masukkan Nomor Kamar">
+
+            <label>Dijemput Oleh:</label>
+            <select id="jemput">
+                <option value="">---pilih---</option>
+                <option>Ayah</option>
+                <option>Ibu</option>
+                <option>Kakak</option>
+                <option>Saudara</option>
+            </select>
+
+            <label>Keterangan:</label>
+            <select id="keterangan">
+                <option value="">---pilih---</option>
+                <option>Sakit</option>
+                <option>Acara</option>
+                <option>Berobat</option>
+                <option>Pulang</option>
+                <option>Keterangan Lainnya</option>
+            </select>
+
+            <label>Yang Mengizinkan:</label>
+            <select id="izin">
+                <option value="">---pilih---</option>
+                <option>Ustad Ari</option>
+                <option>Ustad Faiz</option>
+                <option>Ustad Aiman</option>
+            </select>
+
+            <!-- SUBMIT PERTAMA -->
+            <button type="button" onclick="showLaporan()">Submit</button>
+
+            <!-- SECTION TAMBAHAN -->
+            <div id="laporanSection" style="display:none;" class="laporan-box">
+
+                <label class="checkbox-item">
+                    <input type="checkbox" value="Tea">
+                    Centang Tea
+                </label>
+
+                <label class="checkbox-item">
+                    <input type="checkbox" value="Laporan Wali Kelas">
+                    Laporan Wali Kelas
+                </label>
+
+                <label class="checkbox-item">
+                    <input type="checkbox" value="Laporan Cordinator Keamanan">
+                    Laporan Cordinator Keamanan
+                </label>
+
+                <button type="button" onclick="kirimWA()" style="margin-top:15px;">
+                    Kirim ke WhatsApp
+                </button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
